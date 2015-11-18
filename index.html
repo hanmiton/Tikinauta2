@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Tikinauta Flexbox</title> 
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="estilos.css" rel="stylesheet"/>
+    <style type="text/css">
+    text{
+        font-family:Helvetica, Arial, sans-serif;
+        font-size:11px;
+        pointer-events:none;
+    }
+    #chart{
+        position:absolute;
+        width:   80vh;
+        height:		80vw;
+        top:0;
+        left:0;
+    }
+    #question{
+        position: absolute;
+        width:400px;
+        height:500px;
+        top:0;
+        left:520px;
+    }
+    #question h1{
+        font-size: 50px;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top:50%;
+        -webkit-transform:translate(0,-50%);
+                transform:translate(0,-50%);
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+</head>
+<body>
+
+    <!--seccoin formulario-->
+
+    <section id="formulario" class="padreform">
+    	<div class="padreform-encabezado">
+    		<div class="padreform-encabezado-titulo">
+			</div>
+    	</div>
+    	<div class="padreform-robot">
+    		<div class="padreform-robot-img">
+    		</div>
+    	</div>
+    	<div class="padreform-llenar">
+    		<div class="padreform-nombre">
+    			<div class="padreform-nombre-campo">
+    				<div id="EElogo1" class="padreform-nombre-campo-logo1">
+    				</div>
+    				<div id="EElogo2" class="padreform-nombre-campo-logo1">
+    				</div>
+    			</div>
+		  		<button id="comenzar" class="padreform-nombre-boton">Comenzar</button>
+    		</div>
+    	</div>	
+    </section>
+    <!--seccion Escena 1-->
+	<section id="fondo" class="padre oculto">		
+		<div class="padre-encabezado">
+			<div class="padre-encabezado-titulo">
+			</div>
+        </div>    
+        <div class="padre-body">
+            <div hidden id="animacion1">
+                <div class="padre-body-contenedor1">
+                    <div class="padre-body-contenedor1-minerales1">
+                        <div id="img1" class="padre-body-contenedor1-minerales1-img imagen  latido">
+                        </div>
+                        <div id="img2" class="padre-body-contenedor1-minerales1-img imagen  latido">
+                        </div>
+                    </div>
+                    <div class="padre-body-contenedor1-minerales1">
+                        <div id="img3" class="padre-body-contenedor1-minerales1-img imagen  latido">
+                        </div>
+                        <div id="img4" class="padre-body-contenedor1-minerales1-img imagen  latido">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="padre-body-contenedor2">
+                <div class="padre-body-contenedor2-imagenes">
+                    <div id="img5" class="padre-body-contenedor2-imagenes-img imagen zoom">
+                    </div>
+                    <div id="img6" class="padre-body-contenedor2-imagenes-img imagen latido">
+                    </div>
+                </div>
+            </div>
+        </div>
+	</section>
+
+
+     <!--seccion Escena 2-->
+    <section id="fondo2" class="padre2 oculto">   
+        <div class="padre2-espacio1">
+        </div>    
+        <div id="animacion2">
+            <div class="padre2-contenedor1">
+                <div  id= "img16"class="padre2-contenedor1-mina latido">
+                </div>
+            </div> 
+        </div>
+        <div hidden id="animacion3">
+            <div class="padre2-body">
+                <div id="img17" class="padre2-body-mina2 latido">
+                    <div id="img18"class="padre2-body-mina2-msg oculto zoom">
+                    </div>
+                    <div  hidden id="img19"class="padre2-body-mina2-hombre latido">
+                    </div>
+                </div>
+            </div>
+        </div>
+              
+    </section>
+
+
+    <!--seccion de la tercera escena-->
+    <section id="fondo3" class="padre3 oculto">
+        <div class="padre3-hijo1">
+            <div id="img20" class="padre3-hijo1-contenedor">
+            </div>
+            <div id="img21" class="padre3-hijo1-contenedor">
+            </div>
+            <div id="img22" class="padre3-hijo1-contenedor">
+            </div>
+            <div id="img23" class="padre3-hijo1-contenedor">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="menu" class="padre-contenedor-menuprueba">
+            <div class="espacio-menu">
+            </div>
+            <div class="padre-menuEscenas">
+                <div id="Escena1" class="padre-menuEscenas-Escena padre-menuEscenas-Escena1">
+                </div>
+                <div id="Escena2" class="padre-menuEscenas-Escena padre-menuEscenas-Escena2">
+                </div>
+                <div id="Escena3" class="padre-menuEscenas-Escena padre-menuEscenas-Escena3">
+                </div>
+                <div id="Escena4" class="padre-menuEscenas-Escena padre-menuEscenas-Escena4">
+                </div>
+                <div id="Escena5" class="padre-menuEscenas-Escena padre-menuEscenas-Escena5">
+                </div>  
+                <div id="Escena6" class="padre-menuEscenas-Escena padre-menuEscenas-Escena6">
+                </div>
+                <div id="Escena7" class="padre-menuEscenas-Escena padre-menuEscenas-Escena7">
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+	<!--seccion de la cuarta escena-->
+
+
+	<section id="fondo4" class="padre4 oculto">
+	</section>
+
+	<!--seccion de la quinta escena-->
+
+
+	<section hidden id="fondo5" class="padre5 oculto">
+	</section>
+
+	<!--seccion del juego-->
+	<section id="fondo6" class="padre6 oculto">
+
+	</section>
+	<!--sonidos app-->
+
+	
+	<audio id='mySound' src='res/img/Escena1/trex.ogg'/>
+	<audio id='click' src='res/img/Escena1/click.ogg'></audio>
+	
+	<script>
+        var video = document.getElementById('audiofondo');
+        video.volume = 0.01;
+        var video = document.getElementById('click');
+        video.volume = 0.7;
+    </script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+</body>
+
+<script type="text/javascript">
+   	/* Movimiento fondo*/
+    window.onload = function() {
+      document.onmousemove = function(e) {
+        var x = -(e.clientX/40);
+        var y = -(e.clientY/40);
+        this.body.style.backgroundPosition = x + 'px ' + y + 'px';
+      };
+    };
+ 	
+  </script>
+
+  <script type="text/javascript">
+			
+			function PlaySound(soundobj) {
+   				var thissound=document.getElementById(soundobj);
+    			thissound.play();
+			}
+
+			function StopSound(soundobj) {
+	    		var thissound=document.getElementById(soundobj);
+	    		thissound.pause();
+	   			 thissound.currentTime = 0;
+			}
+
+	</script>
+<script type="text/javascript">
+var nom;
+/*funciones de click para el formualrio*/
+	$(document).ready(function(){
+		$('#comenzar').click(function(){  
+    		$("#formulario").hide("slow");
+    		$("#fondo").css("visibility", "visible");
+    		$("#fondo").fadeTo(1000, 1);
+  			$("#menu").css("visibility", "visible");
+    		$("#menu").fadeTo(1000, 1);
+        	
+    	});
+	});
+
+
+	$(document).ready(function(){
+		$('#ir').click(function(){  
+    		$("#bienvenida").hide("slow");
+    		$("#fondo").css("visibility", "visible");
+    		$("#fondo").fadeTo(1000, 1);	
+    	});
+	});
+
+/*funciones click primera pantalla*/
+	$(document).ready(function(){
+		$('#img6').click(function(){
+			$("#img6").removeClass("latido");
+    		$("#animacion1").show("slow");  			 		
+    	});
+	});
+
+/*funciones click segunda pantalla*/
+    $(document).ready(function(){
+        $('#img16').click(function(){
+            $("#img16").removeClass("latido");
+            $("#animacion2").hide("slow");                      
+            $("#animacion3").show("slow");                      
+        });
+    });
+
+    $(document).ready(function(){
+        $('#img17').click(function(){
+            $("#img17").removeClass("latido");  
+            $("#img19").show("slow");                       
+        });
+    });
+
+    $(document).ready(function(){
+        $('#img19').click(function(){
+            $("#img19").removeClass("latido"); 
+            $("#img18").css("visibility", "visible");
+            $("#img18").fadeTo(300,1);                        
+        });
+    });
+
+
+	
+/*cambio pantalla 1*/
+	$(document).ready(function(){
+		$('#Escena1').click(function(){
+			/*Ocultar escenas excepto la 2*/	
+			$('body').css('background-image', 'url(res/img/Escena1/fondo-1.png)');
+			$("#fondo2").hide("slow");
+			$("#fondo3").hide("slow");
+			$("#fondo4").hide("slow");
+			$("#fondo5").hide("slow");
+			$("#fondo6").hide("slow");
+			$("#fondo").css("visibility", "visible");
+	    	$("#fondo").fadeTo(1000,1); 
+	    	$("#menu").show("slow");  
+		});
+	});
+
+
+/*cambio pantalla 2*/
+	$(document).ready(function(){
+		$('#Escena2').click(function(){
+			/*Ocultar escenas excepto la 2*/	
+			$('body').css('background-image', 'url(res/img/Escena1/fondo-1.png)');
+			$("#fondo").hide("slow");
+			$("#fondo3").hide("slow");
+			$("#fondo4").hide("slow");
+			$("#fondo5").hide("slow");
+			$("#fondo6").hide("slow");
+			$("#fondo2").css("visibility", "visible");
+	    	$("#fondo2").fadeTo(1000,1); 
+	    	$("#menu").show("slow");  
+		});
+	});
+
+/*cambio pantalla 3*/
+	$(document).ready(function(){
+		$('#Escena3').click(function(){
+			/*Ocultar escenas excepto la 2*/	
+			$('body').css('background-image', 'url(res/img/Escena1/fondo-2.png)');
+			$("#fondo").hide("slow");
+			$("#fondo2").hide("slow");
+			$("#fondo4").hide("slow");
+			$("#fondo5").hide("slow");
+			$("#fondo6").hide("slow");
+			$("#fondo3").css("visibility", "visible");
+	    	$("#fondo3").fadeTo(1000,1);   
+	    	$("#menu").show("slow");  
+		});
+	});
+
+
+/*cambio pantalla 4*/
+	$(document).ready(function(){
+		$('#Escena4').click(function(){
+			/*Ocultar escenas excepto la 2*/	
+			$('body').css('background-image', 'url(res/img/Escena4/fondo4.png)');
+			$("#fondo").hide("slow");
+			$("#fondo2").hide("slow");
+			$("#fondo3").hide("slow");
+			$("#fondo5").hide("slow");
+			$("#fondo6").hide("slow");
+			$("#fondo4").css("visibility", "visible");
+	    	$("#fondo4").fadeTo(1000,1);  
+	    	$("#menu").show("slow");   
+		});
+	});
+
+	/*efectos de la segunda escean*/
+	/* Animaciones Escena2*/
+	var cuenta1=0;
+		$(document).ready(function(){
+			$('#planta,#animal,#sedimento2').click(function(){
+				if (cuenta1 == 0)
+				{
+					$("#msgsegunda").hide(); 
+					$('#sedimento2').hide('slow');	
+					$("#planta").hide("slow");
+					$('.padre2-hijo2').css('justify-content', 'center');
+					$('.padre2-hijo2-contenedorimg').css('justify-content', 'center');
+					$('.padre2-hijo2-contenedorimg').css('width', '50%');
+					$('#animal').css('background-image', 'url(res/img/Escena2/petroleogota.png)');
+					cuenta1++;
+				}
+				else 
+				{
+					$('#animal').css('background-image', 'url(res/img/Escena2/petroleogota2.png)'); 
+					$('.padre2-hijo2-contenedorimg-imagen').css('height', '50vh');
+					$('.padre2-hijo1').css('height', '35vh');
+					//$("#animal").removeClass("latido");
+				}
+    		});
+		});
+	
+/*efectos y animacion es de la tercera pantalla*/
+	$(document).ready(function(){
+		$('#flechas').click(function(){
+			/*Ocultar escenas excepto la 2*/	
+			$("#msgplaneta").css("visibility", "visible");
+	    	$("#msgplaneta").fadeTo(1000,1);  
+	    	$("#flechas").removeClass("latido");
+		});
+	});
+
+
+//funciones pantalla 4
+
+	$(document).ready(function(){
+		$('#exploracion').click(function(){
+			/*Ocultar escenas excepto la 2*/	
+			$("#tierra2").hide("slow");
+			$("#exploracion").hide("slow");
+			$("#contenedor4").show("slow");
+			$("#msgblanco").css("visibility", "visible");
+    		$("#msgblanco").fadeTo(1000, 1);
+    		$("#msgExploracion").css("visibility", "visible");
+    		$("#msgExploracion").fadeTo(1000, 1);
+    		$("#contenido4").css("visibility", "visible");
+    		$("#contenido4").fadeTo(1000, 1);
+			
+
+		});
+	});
+
+	$(document).ready(function(){
+		$('#msgExploracion').click(function(){
+			/*Ocultar escenas excepto la 2*/	
+			$("#msgExploracion").removeClass("latido");	
+			$("#torre").css("visibility", "visible");
+    		$("#torre").fadeTo(1000, 1);
+
+			});
+	});
+
+	$(document).ready(function(){
+		$('#torre').click(function(){
+			/*Ocultar escenas excepto la 2*/
+			$("#msgblanco").css("height", "20vh");
+			$("#msgExploracion").css("visibility", "hidden");
+    		$('#torre').css("height", "50vh"); 
+			$('#torre').css('background-image', 'url(res/img/Escena4/torre-petroleo.png)'); 	
+			
+
+			});
+	});
+
+
+
+
+
+/*cambio pantalla 5*/
+	$(document).ready(function(){
+		$('#Escena5').click(function(){
+			/*Ocultar escenas excepto la 2*/	
+			$('body').css('background-image', 'url(res/img/Escena5/fondo5.png)');
+			$("#fondo").hide("slow");
+			$("#fondo2").hide("slow");
+			$("#fondo3").hide("slow");
+			$("#fondo4").hide("slow");
+			$("#fondo6").hide("slow");
+			$("#fondo5").css("visibility", "visible");
+	    	$("#fondo5").fadeTo(1000,1); 
+	    	$("#menu").show("slow");  
+	    	$("#contenedor2").show("slow");  
+
+		});
+	});
+
+	$(document).ready(function(){
+		$('#pizarra').click(function(){
+			/*Ocultar escenas excepto la 2*/	
+			$('#pizarra').removeClass('latido');
+			$('#contenedor-cientificos').show('slow');	  
+		});
+	});
+
+	$(document).ready(function(){
+		$('#contenedor-cientificos').click(function(){
+			/*Ocultar escenas excepto la 2*/	
+			$('#cientificos-latir').removeClass('latido');
+			$('#laboratoriolatir').show('slow');	  
+		});
+	});
+
+
+	$(document).ready(function(){
+		$('#laboratoriolatir').click(function(){
+			/*Ocultar escenas excepto la 2*/	
+			$('#laboratoriolatir').removeClass('latido');
+			$('#contenedor1').show('slow');	  
+		});
+	});
+
+
+/*cambio pantalla 6*/
+	$(document).ready(function(){
+		$('#Escena6').click(function(){
+			/*Ocultar escenas excepto la 2*/	
+			$('body').css('background-image', 'url(res/img/Escena6/fondo.png)');
+			$("#fondo").hide("slow");
+			$("#fondo2").hide("slow");
+			$("#fondo3").hide("slow");
+			$("#fondo4").hide("slow");
+			$("#fondo5").hide("slow");
+			$("#fondo6").css("visibility", "visible");
+	    	$("#fondo6").fadeTo(1000,1); 
+	    	$("#menu").show("slow");  
+	    	$("#contenedor2").show("slow");  
+
+		});
+	});
+
+
+</script>
+
+</html>
+

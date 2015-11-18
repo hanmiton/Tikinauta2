@@ -1,0 +1,725 @@
+* {
+	margin: 0;
+	border: 0;
+}
+
+body{
+	background: black;
+	background-image: url(./res/img/Escena1/fondo-1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.padreform{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	background: black;
+	opacity: 0.85;	
+}
+
+	.padreform-encabezado{
+		display: flex;
+		justify-content:center;
+		width: 100%;
+		height: 20vh;
+		opacity: 1;
+	}
+
+	.padreform-saludo{
+		background: black;
+		opacity: 0.75;
+		display: flex;
+		justify-content:center;
+		width: 100%;
+		height: 20vh;
+	}
+
+		.padreform-encabezado-titulo{
+			background-image: url(./res/img/Escena1/titulo.png);
+			width: 25%;
+			height: 20vh;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			opacity: 1;
+		}
+
+	.padreform-robot{
+		display: flex;
+		justify-content:center;
+		width: 100%;
+		height: 60vh;
+	}	
+
+	.padreform-saludoimg{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		height: 60vh;
+	}
+
+	.padreform-saludotxt{
+		display: flex;
+		justify-content: center;
+	    flex-direction: column;
+		width: 55%;
+		height: 60vh;
+	}
+		.padreform-robot-img{
+			background-image: url(./res/img/Escena1/robot-wellcome.png);
+			width: 25%;
+			height: 60vh;
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+
+	.padreform-llenar{
+		width: 100%;
+		height: 20vh;
+		display: flex;
+		justify-content: center;
+	}	
+	.padreform-nombre{
+		width: 25%;
+		height: 15vh;
+		display: flex;
+		flex-direction:column;
+		justify-content: space-between;
+	}
+		.padreform-nombre-campo{
+			display: flex;
+			justify-content: space-around;
+			width: 100%;
+			height: 8vh;
+		}
+
+			.padreform-nombre-campo-logo1{
+				width: 25%;
+				height: 8vh;
+				background-repeat: no-repeat;
+				background-size: 70%;
+			}
+
+			#EElogo1{
+				background-image: url(./res/img/Bienvenida/eelogo1.png);
+			}
+			#EElogo2{
+				background-image: url(./res/img/Bienvenida/eelogo2.png);
+				background-size: 100%;
+			}
+		.padreform-nombre-boton{
+			width: 100%;
+			height: 5vh;
+			border-radius: 6px;
+		}
+
+		.padreform-nombre-boton2{
+			width: 25%;
+			height: 5vh;
+			border-radius: 6px;
+		}
+
+
+.padre{
+	display: none;
+	flex-direction: column;
+	width: 100%;
+	height: 85vh;	
+}
+
+.menu{
+	display: none;
+	width: 100%;
+	height: 15vh;	
+}	
+
+	.padre-encabezado{
+		display: flex;
+		justify-content: center;
+	}
+
+		.padre-encabezado-titulo{
+		background-image: url(./res/img/Escena1/titulo.png);
+		width: 25%;
+		height: 20vh;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		}
+
+
+	.padre-body{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 65vh;
+	}
+
+		#animacion1{
+			width: 50%;
+			height: 65vh
+		}
+		.padre-body-contenedor1{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+			height: 65vh;
+		}
+			.padre-body-contenedor1-minerales1{
+				
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				height: 32vh;
+			}
+				.padre-body-contenedor1-minerales1-img{
+				
+					width: 40%;
+					height: 32vh;
+				}
+
+				.imagen {
+					background-repeat: no-repeat;
+					background-size: 70%;
+				}
+
+
+
+				#img1{
+					background-image: url(./res/img/Escena1/img1.png);
+				}
+
+				#img2{
+					background-image: url(./res/img/Escena1/img2.png);
+				}
+				#img3{
+					background-image: url(./res/img/Escena1/img3.png);
+				}
+				#img4{
+					background-image: url(./res/img/Escena1/img4.png);
+				}
+
+					#img1:hover{
+						background-image: url(./res/img/Escena1/img7.png);
+					}
+
+					#img2:hover{
+						background-image: url(./res/img/Escena1/img8.png);
+					}
+					#img3:hover{
+						background-image: url(./res/img/Escena1/img9.png);
+					}
+					#img4:hover{
+						background-image: url(./res/img/Escena1/img10.png);
+					}
+
+						#img1:active{
+						background-image: url(./res/img/Escena1/img11.png);
+						}
+
+						#img2:active{
+							background-image: url(./res/img/Escena1/img12.png);
+						}
+						#img3:active{
+							background-image: url(./res/img/Escena1/img14.png);
+						}
+						#img4:active{
+							background-image: url(./res/img/Escena1/img13.png);
+						}
+
+				#img5{
+					background-image: url(./res/img/Escena1/img5.png);
+					background-size: 80%;
+					background-repeat: no-repeat;
+				}
+				#img6{
+					background-image: url(./res/img/Escena1/img6.png);
+					background-size: 80%;
+					background-repeat: no-repeat;
+				}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		.padre-body-contenedor2{
+			display: flex;
+			justify-content: center;
+			width: 50%;
+			height: 65vh;
+		}
+			.padre-body-contenedor2-imagenes{
+				display: flex;
+				justify-content : center;
+				flex-direction: column;
+				width: 50%;
+				height: 65vh;
+			}
+			.padre-body-contenedor2-imagenes-img{
+				width: 100%;
+				height: 30vh;
+			}
+
+		
+
+.padre-contenedor-menu{
+	display:none;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 15vh;
+}
+
+
+#menu{
+	display: none;
+}
+
+.padre-contenedor-menuprueba{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	height: 15vh;
+}
+
+	.padre-menuEscenas{
+		display: flex;
+		justify-content: space-between;
+		width: 80%;
+		height: 15vh;
+	}
+
+		.padre-menuEscenas-Escena{
+			width: 8%;
+			height: 13vh;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			border-radius: 50%;
+		}
+		.padre-menuEscenas-Escena1{
+			background-image: url(./res/img/Escena1/images.jpg);
+		}
+
+
+		.padre-menuEscenas-Escena2{
+			background-image: url(./res/img/Escena1/images.jpg);
+		}
+
+		.padre-menuEscenas-Escena3{
+			background-image: url(./res/img/Escena1/images.jpg);
+		}
+
+		.padre-menuEscenas-Escena4{
+			background-image: url(./res/img/Escena1/images.jpg);
+		}
+
+		.padre-menuEscenas-Escena5{
+			background-image: url(./res/img/Escena1/images.jpg);
+		}
+
+		.padre-menuEscenas-Escena6{
+			background-image: url(./res/img/Escena1/images.jpg);
+		}
+
+		.padre-menuEscenas-Escena7{
+			background-image: url(./res/img/Escena1/images.jpg);
+
+		}	
+
+	
+
+
+
+.padre2{
+	display: none;
+	flex-direction: column;
+	width: 100%;
+	height: 85vh;	
+}
+
+	.padre2-espacio1{
+		width: 100%;
+		height: 5vh;
+	}
+	.padre2-contenedor1{
+		display: flex;
+		justify-content: flex-end;
+		width: 90%;
+		height: 50vh;
+	}
+
+		.padre2-contenedor1-mina{
+			width: 30%;
+			height: 50vh;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-image: url(./res/img/Escena1/img15.png);
+
+		}
+
+		.padre2-contenedor1-mina:hover {
+			background-image: url(./res/img/Escena1/img16.png);
+
+		}
+
+		#animacion2{
+			width: 100%;
+			height: 50vh;
+		}
+
+		#animacion3{
+			width: 100%;
+			height: 75vh;
+		}
+
+		.padre2-body{
+			display: flex;
+			justify-content: space-around;
+			width: 100%;
+			height: 75vh;
+		}
+
+			.padre2-body-mina2{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 60%;
+				height: 75vh;
+				background-repeat: no-repeat;
+				background-size: 60%;
+				background-image: url(./res/img/Escena1/img17.png);
+			}
+				.padre2-body-mina2-msg{
+					width: 80%;
+					height: 30vh;
+					background-repeat: no-repeat;
+					background-size: 40%;
+					background-position: center;
+					background-image: url(./res/img/Escena1/img19.png);
+				}
+				.padre2-body-mina2-hombre{
+					width: 80%;
+					height: 45vh;
+					background-repeat: no-repeat;
+					background-size: 25%;
+					background-position: center;
+					background-image: url(./res/img/Escena1/img18.png);
+				}
+
+
+.padre3{
+	display: none;
+	flex-direction: column;
+	width: 100%;
+	height: 85vh;	
+}
+
+	.padre3-hijo1{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height:100vh;
+	}
+		.padre3-hijo1-contenedor{
+			width: 20%;
+			height: 85vh;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: bottom;
+		}
+
+		#img20{
+			background-image: url(./res/img/Escena1/img20.png);
+			
+		}
+
+
+		#img21{
+			background-image: url(./res/img/Escena1/img21.png);
+			
+		}
+
+
+		#img22{
+			background-image: url(./res/img/Escena1/img22.png);
+		}
+
+
+		#img23{
+			background-image: url(./res/img/Escena1/img23.png);
+		
+		}
+
+
+	.padre3-hijo2{
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		height: 75vh;
+	}
+		.padre3-hijo2-planeta{
+			background-image: url(./res/img/Escena3/tierra1.png);	
+			display: flex;
+			justify-content: flex-end;
+			width: 30%;
+			height: 75vh;
+			background-size: 100%;
+			background-repeat: no-repeat;
+		}
+			.padre3-hijo2-planeta-flechas{
+				width: 60%;
+				height: 40vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				
+			}
+			.padre3-hijo2-planeta-flechasimg{
+				width: 100%;
+				height: 20vh;
+				background-image: url(./res/img/Escena2/petroflechas.png);
+				background-size: 80%;
+				background-repeat: no-repeat;
+
+			}
+		.padre3-hijo2-msg3{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			width: 40%;
+			height: 75vh;
+		}
+
+		.padre3-hijo2-msgtxt{
+			background-image: url(./res/img/Escena3/msg3.png);	
+			background-size: 100%;
+			background-repeat: no-repeat;
+			width: 60%;
+			height: 40vh;
+		}
+
+
+.oculto{	
+  	visibility: hidden;
+	opacity: 0;
+}
+
+.letra-grande{
+	font-size: 80px;
+}
+
+.bienvenida-saludo{
+	width: 100%;
+	height: 30hv;
+}
+
+.padre4{
+	display: none;
+	flex-direction: column;
+	width: 100%;
+	height: 85vh;	
+}
+
+	.fondo4-blanco{
+		width: 100%;
+		height: 40vh;
+	}
+	.padre4-hijo1{
+		width: 100%;
+		height: 100vh;
+		background-image: url(./res/img/Escena4/tierra.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+		.padre4-hijo1-espacio{
+			width: 100%;
+			height: 40vh;
+		}
+		.padre4-hijo1-exploracion{
+			width: 100%;
+			height: 35vh;
+			display: flex;
+			justify-content: center;
+		}
+			.padre4-hijo1-exploracion-img{
+				width: 50%;
+				height: 30vh;
+				background-image: url(./res/img/Escena4/lupa.png);
+				background-size: 30%;
+				background-repeat: no-repeat;
+
+			}
+
+			.padre4-hijo1-exploracion-msg{
+				width: 40%;
+				height: 40vh;
+				background-image: url(./res/img/Escena4/hombrecito.png);
+				background-size: 50%;
+				background-repeat: no-repeat;
+				margin-left: 10%;
+			}
+
+			.padre4-hijo1-exploracion-torre{
+				width: 40%;
+				height: 40vh;
+				background-image: url(./res/img/Escena4/hombrecito.png);
+				background-size: 50%;
+				background-repeat: no-repeat;
+				margin-left: 10%;
+			}
+
+			.exploracion-contenido{
+				display: flex;
+				flex-direction: row;
+				width: 100%;
+				height: 40vh;
+				justify-content: center;
+
+			}
+
+
+			.torre-exploracion{
+				width: 20%;
+				height: 40vh;
+				background-image: url(./res/img/Escena4/torre.png);
+				background-size: 50%;
+				background-repeat: no-repeat;
+			}
+
+
+
+.padre5{
+	flex-direction: column;
+	width: 100%;
+	height: 85vh;	
+}
+
+
+	.padre5-espacio{
+		width: 100%;
+		height: 25vh;		
+	}
+
+	.padre5-body{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 60vh;
+	}
+
+	.contenedor1{
+		width: 50%;
+			height: 60vh;
+	}
+
+		.padre5-body-contenedor1{
+			width: 100%;
+			height: 60vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+			.padre5-body-contenedor1-elementos1{
+				width: 100%;
+				height: 30vh;
+				display: flex;
+			}
+				.padre5-body-contenedor1-elementos1-elemento{
+					width: 33.33%;
+					height: 30vh;
+					background-size: 70%;
+					background-repeat: no-repeat;
+				}
+
+		.padre5-body-contenedor2{
+			width: 40%;
+			height: 60vh;
+
+		}
+
+
+			.padre5-body-contenedor2-cientificos{
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				width: 100%;
+				height:60vh;
+				background: center;
+				background-repeat: no-repeat;
+				background-image:url(./res/img/Escena5/cientificos2.png);
+			}
+
+
+			.padre5-body-contenedor2-instrumentos{
+				width: 100%;
+				height: 40vh;
+				background: center;
+				background-repeat: no-repeat;
+				background-image: url(./res/img/Escena5/cientificos1.png);
+			}
+
+			.padre5-body-contenedor2-pizarra{
+				width: 100%;
+				height: 60vh;
+				background: center;
+				background-repeat: no-repeat;
+				background-image: url(./res/img/Escena5/pizarra.png);
+			}
+
+				#imagen1{
+					background-size: 60%;
+					background-image:url(./res/img/Escena5/a.png);
+				}
+				#imagen2{
+					background-image:url(./res/img/Escena5/b.png);
+				}		
+				#imagen3{
+					background-size: 50%;
+					background-image:url(./res/img/Escena5/c.png);
+				}
+				#imagen4{
+					background-image:url(./res/img/Escena5/d.png);
+				}
+				#imagen5{
+					background-image:url(./res/img/Escena5/e.png);
+				}
+				#imagen6{
+					background-image:url(./res/img/Escena5/f.png);
+				}
+.padre6{
+	display: none;
+	flex-direction: column;
+	width: 100%;
+	height: 85vh;	
+}
+
+
+.zoom{
+	transition : 1s;
+}
+
+	.zoom:hover{
+		transform: scale(1.2);
+	}
+
+
+.latido{
+	animation: 1s latido infinite;
+}
+
+
+		@keyframes latido{
+   			0%{transform:scale(1)}
+  			50%{transform:scale(1.1)}
+   			90%{transform:scale(1)}
+		}
+
