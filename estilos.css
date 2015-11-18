@@ -509,53 +509,6 @@ body{
 		}
 
 
-	.padre3-hijo2{
-		display: flex;
-		justify-content: flex-end;
-		width: 100%;
-		height: 75vh;
-	}
-		.padre3-hijo2-planeta{
-			background-image: url(./res/img/Escena3/tierra1.png);	
-			display: flex;
-			justify-content: flex-end;
-			width: 30%;
-			height: 75vh;
-			background-size: 100%;
-			background-repeat: no-repeat;
-		}
-			.padre3-hijo2-planeta-flechas{
-				width: 60%;
-				height: 40vh;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				
-			}
-			.padre3-hijo2-planeta-flechasimg{
-				width: 100%;
-				height: 20vh;
-				background-image: url(./res/img/Escena2/petroflechas.png);
-				background-size: 80%;
-				background-repeat: no-repeat;
-
-			}
-		.padre3-hijo2-msg3{
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-end;
-			width: 40%;
-			height: 75vh;
-		}
-
-		.padre3-hijo2-msgtxt{
-			background-image: url(./res/img/Escena3/msg3.png);	
-			background-size: 100%;
-			background-repeat: no-repeat;
-			width: 60%;
-			height: 40vh;
-		}
-
 
 .oculto{	
   	visibility: hidden;
@@ -574,75 +527,62 @@ body{
 .padre4{
 	display: none;
 	flex-direction: column;
+	justify-content: center;
 	width: 100%;
-	height: 85vh;	
+	height: 85vh;
 }
 
-	.fondo4-blanco{
+	.padre4-contenedor{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		width: 100%;
-		height: 40vh;
+		height: 85vh;
+		background: red;
 	}
 	.padre4-hijo1{
+		display: flex;
+		justify-content: center;
 		width: 100%;
-		height: 100vh;
-		background-image: url(./res/img/Escena4/tierra.png);
-		background-size: 100%;
-		background-repeat: no-repeat;
+		height: 35vh;
+		background: red;
 	}
-		.padre4-hijo1-espacio{
-			width: 100%;
-			height: 40vh;
-		}
-		.padre4-hijo1-exploracion{
-			width: 100%;
-			height: 35vh;
+		.padre4-hijo1-gota{
 			display: flex;
 			justify-content: center;
+			width: 70%;
+			height: 45vh;
+			background: blue;
 		}
-			.padre4-hijo1-exploracion-img{
-				width: 50%;
-				height: 30vh;
-				background-image: url(./res/img/Escena4/lupa.png);
-				background-size: 30%;
+			.padre4-hijo1-gota-img{
+				width: 35%;
+				height: 45h;
+				background: black;
 				background-repeat: no-repeat;
-
+				background-size: 80%;
+				background-position: bottom;
 			}
 
-			.padre4-hijo1-exploracion-msg{
-				width: 40%;
-				height: 40vh;
-				background-image: url(./res/img/Escena4/hombrecito.png);
-				background-size: 50%;
+			.padre4-hijo1-gota-msg{
+				width: 35%;
+				height: 45vh;
+				background: red;
 				background-repeat: no-repeat;
-				margin-left: 10%;
+				background-size: 80%;
+				background-position: bottom;
 			}
 
-			.padre4-hijo1-exploracion-torre{
-				width: 40%;
-				height: 40vh;
-				background-image: url(./res/img/Escena4/hombrecito.png);
-				background-size: 50%;
-				background-repeat: no-repeat;
-				margin-left: 10%;
+			#img30{
+			background-image: url(./res/img/Escena1/img30.png);
+			
+		}
+
+			#img31{
+			background-image: url(./res/img/Escena1/img31.png);
+			
 			}
 
-			.exploracion-contenido{
-				display: flex;
-				flex-direction: row;
-				width: 100%;
-				height: 40vh;
-				justify-content: center;
-
-			}
-
-
-			.torre-exploracion{
-				width: 20%;
-				height: 40vh;
-				background-image: url(./res/img/Escena4/torre.png);
-				background-size: 50%;
-				background-repeat: no-repeat;
-			}
+	
 
 
 
