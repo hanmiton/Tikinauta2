@@ -128,14 +128,28 @@
     <!--seccion de la tercera escena-->
     <section id="fondo3" class="padre3 oculto">
         <div class="padre3-hijo1">
-            <div id="img20" class="padre3-hijo1-contenedor">
-            </div>
-            <div id="img21" class="padre3-hijo1-contenedor">
-            </div>
-            <div id="img22" class="padre3-hijo1-contenedor">
-            </div>
-            <div id="img23" class="padre3-hijo1-contenedor">
-            </div>
+        	<div class="padre3-hijo1-contenedor">
+        		<div class="padre3-hijo1-contmsgs">
+        			<div  hidden id="img20" class="padre3-hijo1-contmsg latido">
+        			</div>
+        			<div  id="img21" class="padre3-hijo1-contmsg latido">
+        			</div>
+        			<div  hidden id="img22" class="padre3-hijo1-contmsg latido">
+        			</div>
+        			<div  hidden id="img23" class="padre3-hijo1-contmsg latido">
+        			</div>			
+        		</div>
+        		<div class="padre3-hijo1-contimgs">
+        			<div  hidden id="img24" class="padre3-hijo1-contimg latido">
+        			</div>
+        			<div id="img25" class="padre3-hijo1-contimg latido">
+        			</div>
+        			<div  hidden id="img26" class="padre3-hijo1-contimg latido">
+        			</div>
+        			<div  hidden id="img27" class="padre3-hijo1-contimg latido">
+        			</div>	
+        		</div>
+        	</div>     
         </div>
     </section>
 
@@ -279,7 +293,59 @@ var nom;
     });
 
 
-	
+
+    $(document).ready(function(){
+        $('#img17').click(function(){
+            $("#img17").removeClass("latido");  
+            $("#img19").show("slow");                       
+        });
+    });
+
+    $(document).ready(function(){
+        $('#img19').click(function(){
+            $("#img19").removeClass("latido"); 
+            $("#img18").css("visibility", "visible");
+            $("#img18").fadeTo(300,1);                        
+        });
+    });
+
+
+/*funciones click tercera pantalla*/
+    $(document).ready(function(){
+        $('#img25').click(function(){
+            $("#img25").removeClass("latido");
+            $("#img21").removeClass("latido");
+           	$("#img26").show("slow");
+           	$("#img22").show("slow");                         
+        });
+    });
+
+     $(document).ready(function(){
+        $('#img26').click(function(){
+            $("#img26").removeClass("latido");
+            $("#img22").removeClass("latido");
+           	$("#img24").show("slow");
+           	$("#img20").show("slow");                         
+        });
+    });
+
+    $(document).ready(function(){
+        $('#img24').click(function(){
+            $("#img24").removeClass("latido");
+            $("#img20").removeClass("latido");
+           	$("#img27").show("slow");
+           	$("#img23").show("slow");                         
+        });
+    });
+
+    $(document).ready(function(){
+        $('#img27').click(function(){
+            $("#img23").removeClass("latido");
+            $("#img27").removeClass("latido");                        
+        });
+    });
+
+
 /*cambio pantalla 1*/
 	$(document).ready(function(){
 		$('#Escena1').click(function(){
@@ -301,7 +367,6 @@ var nom;
 	$(document).ready(function(){
 		$('#Escena2').click(function(){
 			/*Ocultar escenas excepto la 2*/	
-			$('body').css('background-image', 'url(res/img/Escena1/fondo-1.png)');
 			$("#fondo").hide("slow");
 			$("#fondo3").hide("slow");
 			$("#fondo4").hide("slow");
@@ -334,7 +399,6 @@ var nom;
 	$(document).ready(function(){
 		$('#Escena4').click(function(){
 			/*Ocultar escenas excepto la 2*/	
-			$('body').css('background-image', 'url(res/img/Escena4/fondo4.png)');
 			$("#fondo").hide("slow");
 			$("#fondo2").hide("slow");
 			$("#fondo3").hide("slow");

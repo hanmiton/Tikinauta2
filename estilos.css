@@ -430,18 +430,46 @@ body{
 		height:100vh;
 	}
 		.padre3-hijo1-contenedor{
-			width: 20%;
+			width: 100%;
 			height: 85vh;
-			background-repeat: no-repeat;
-			background-size: 100%;
-			background-position: bottom;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
 		}
+
+			.padre3-hijo1-contmsgs{
+				width: 100%;
+				height: 30vh;
+				display: flex;
+				justify-content: space-around;
+			}
+				.padre3-hijo1-contmsg{
+					width: 20%;
+					height: 30vh;
+					background-repeat: no-repeat;
+					background-size: 100%;
+					background-position: bottom;
+				}
+			.padre3-hijo1-contimgs{
+				width: 100%;
+				height: 50vh;
+				display: flex;
+				justify-content: center;
+			}
+				.padre3-hijo1-contimg{
+					width: 20%;
+					height: 50vh;
+					background-repeat: no-repeat;
+					background-size: 80%;
+					background-position: bottom;
+				}
+				
+		
 
 		#img20{
 			background-image: url(./res/img/Escena1/img20.png);
 			
 		}
-
 
 		#img21{
 			background-image: url(./res/img/Escena1/img21.png);
@@ -456,6 +484,27 @@ body{
 
 		#img23{
 			background-image: url(./res/img/Escena1/img23.png);
+		
+		}
+
+		#img24{
+			background-image: url(./res/img/Escena1/img24.png);
+			
+		}
+
+		#img25{
+			background-image: url(./res/img/Escena1/img25.png);
+			
+		}
+
+
+		#img26{
+			background-image: url(./res/img/Escena1/img26.png);
+		}
+
+
+		#img27{
+			background-image: url(./res/img/Escena1/img27.png);
 		
 		}
 
